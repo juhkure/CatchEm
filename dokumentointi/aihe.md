@@ -8,6 +8,6 @@ murtautua useampiin järjestelmiin, mikäli ehtii.
 
 Murtautuessaan johonkin järjestelmään onnistuneesti, pelaajalle ilmoitetaan saavutuksestaan.
 
-###Pelaajan toiminnot
+##Pelaajan toiminnot
 Vielä ei ole kaikkea päätetty, mutta näillä näkymin pelaajan tulee painella näppäimistöään täysin satunnaisessa järjestyksessä, voittaakseen ja edetäkseen pelissä.
 Pelissä ikäänkuin "spämmitään" näppäimiä, voittoa kohti.
