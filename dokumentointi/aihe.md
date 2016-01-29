@@ -8,6 +8,13 @@ murtautua useampiin j‰rjestelmiin, mik‰li ehtii.
 
 Murtautuessaan johonkin j‰rjestelm‰‰n onnistuneesti, pelaajalle ilmoitetaan saavutuksestaan.
 
-##Pelaajan toiminnot
+##K‰ytt‰j‰t
+Kuka tahansa pelaaja
+
+##Kaikkien k‰ytt‰jien toiminnot/pelaajan toiminnot
+Pelaaja voi avata pelin, ja aloittaa sen painamalla "Start" -n‰pp‰int‰
+
 Viel‰ ei ole kaikkea p‰‰tetty, mutta n‰ill‰ n‰kymin pelaajan tulee painella n‰pp‰imistˆ‰‰n t‰ysin satunnaisessa j‰rjestyksess‰, voittaakseen ja edet‰kseen peliss‰.
 Peliss‰ ik‰‰nkuin "sp‰mmit‰‰n" n‰pp‰imi‰, voittoa kohti.
+
+Pelin loputtua, pelaaja voi valita pelatakseen uudelleen tai lopettaakseen pelin, jolloin pelin ikkuna sulkeutuu.
