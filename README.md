@@ -7,4 +7,5 @@ Tehtävänä on näppäillä näppäimistöäsi mahdollisimman raivokkaasti edetäksesi pel
 
 [tuntikirjanpito](dokumentointi/tuntikirjanpito.md)
 
+###Luokkakaavio
 ![luokkakaavio](dokumentointi/luokkakaavio.png)
