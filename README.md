@@ -5,4 +5,6 @@ Tehtävänä on näppäillä näppäimistöäsi mahdollisimman raivokkaasti edetäksesi pel
 ##Dokumentaatio
 [aiheen kuvaus](dokumentointi/aihe.md)
 
-[tuntikirjanpito](dokumentoinit/tuntikirjanpito.md)
+[tuntikirjanpito](dokumentointi/tuntikirjanpito.md)
+
+![luokkakaavio](dokumentointi/luokkakaavio.png)
