@@ -11,8 +11,8 @@ package hackerointipeli;
  */
 public class TextUI {
 
-    void run() {
-        System.out.println("This is the hacking game.");
+    public String toString(){
+        return "This is the hacking game.";
     }
     
 }

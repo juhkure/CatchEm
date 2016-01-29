@@ -5,18 +5,21 @@
  */
 package hackerointipeli;
 
+import java.awt.Graphics;
+
 /**
  *
  * @author Johannes
  */
-public class Target {
+public class Target extends GameObject{
 
     private int hitpoints; //HP = hitpoints
     private String name;
-
-    public Target(String name, int hitpoints) {
-        this.name = name;
-        this.hitpoints = hitpoints;
+    
+    public Target(int x, int y, ID id){
+        super(x, y, id);
+        this.name = "target";
+        this.hitpoints = 100;
     }
 
     public int getHitpoints() {
@@ -29,7 +32,7 @@ public class Target {
 
     public boolean removeHealth() {
         hitpoints--;
-        if (hitpoints == 0) {
+        if (hitpoints < 0) {
             return true;
         }
         return false;
@@ -38,5 +41,15 @@ public class Target {
     @Override
     public String toString() {
         return "Target: " + name + ", remaining hitpoints: " + hitpoints;
+    }
+
+    @Override
+    public void tick() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void render(Graphics g) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

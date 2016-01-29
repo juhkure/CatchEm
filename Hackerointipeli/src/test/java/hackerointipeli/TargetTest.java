@@ -17,9 +17,8 @@ import static org.junit.Assert.*;
  * @author Johannes
  */
 public class TargetTest {
-
-    Target t = new Target("ebin", 100);
-    Target t2 = new Target("ebin", 5);
+    Target t = new Target(30, 30, ID.Target);
+    Target t2 = new Target(30 , 30, ID.Target);
 
     public TargetTest() {
     }
@@ -41,12 +40,26 @@ public class TargetTest {
     }
 
     @Test
+    public void getXWorks() {
+        assertEquals(30, t.getX());
+    }
+    
+    @Test
+    public void getYWorks() {
+        assertEquals(30, t.getY());
+    }
+    
+    @Test
+    public void getIdWorks(){
+        assertEquals(t.getId(), t.getId());
+    }
+    
+    @Test
     public void healthIsZero(){
-        t2.removeHealth();
-        t2.removeHealth();
-        t2.removeHealth();
-        t2.removeHealth();
-        assertEquals(true, t2.removeHealth());
+        for (int i = 0; i <= 100; i++) {
+            t.removeHealth();
+        }
+        assertEquals(true, t.removeHealth());
     }
     
     @Test
@@ -56,12 +69,12 @@ public class TargetTest {
     
     @Test
     public void getNameWorks(){
-        assertEquals("ebin", t.getName());
+        assertEquals("target", t.getName());
     }
     
     @Test
     public void toStringWorks(){
-        assertEquals("Target: ebin, remaining hitpoints: 100" , t.toString());
+        assertEquals("Target: target, remaining hitpoints: 100" , t.toString());
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:

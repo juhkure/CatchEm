@@ -9,6 +9,7 @@ package hackerointipeli;
  *
  * @author Johannes
  */
-public class ID {
+public enum ID {
     
+    Target();
 }
