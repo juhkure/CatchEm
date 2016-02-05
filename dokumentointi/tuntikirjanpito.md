@@ -11,3 +11,6 @@ K‰ytin tunnin pelin ohjelmoimiseen, mit‰‰n suurta ei tehty. Vain muutamia luokki
 
 ##28.1.2016
 17.00-22.00 Ohjelmoin peli‰ ja p‰ivitin dokumentointia
+
+##5.2.2016
+17.00-24.00 Sain vihdoin pitin toimimaan. Tein paljon muutoksia ohjelman koodiin. Ajattelin muuttaa aihetta hieman, mutta rakenne pysyy l‰hestulkoot samana.
