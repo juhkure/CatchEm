@@ -38,8 +38,6 @@ public class Game extends Canvas implements Runnable{
     }
     
     public void run(){
-        TextUI textui = new TextUI();
-        System.out.println(textui.toString());
         
         long lastTime = System.nanoTime();
         double amountOfTicks = 60.0;
