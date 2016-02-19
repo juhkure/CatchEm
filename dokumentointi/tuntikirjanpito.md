@@ -14,3 +14,6 @@ K‰ytin tunnin pelin ohjelmoimiseen, mit‰‰n suurta ei tehty. Vain muutamia luokki
 
 ##5.2.2016
 17.00-24.00 Sain vihdoin pitin toimimaan. Tein paljon muutoksia ohjelman koodiin. Ajattelin muuttaa aihetta hieman, mutta rakenne pysyy l‰hestulkoot samana.
+
+##19.2.2016
+17.00-24.00 Oli paljon ongelmia pelin windowin kanssa, sill‰ se v‰lill‰ toimi ja v‰lill‰ ei, riippumatta koskinko koodiin vai en. Sain sen pitk‰n trial and error -vaiheen j‰lkeen toimimaan.
