@@ -23,14 +23,14 @@ public class Game extends Canvas implements Runnable {
     private boolean running = false;
 
     public Game() {
-        new Window(width, height, "Hackerointipeli", this);
-        run();
+        Window window = new Window(width, height, "Hackerointipeli", this);
     }
 
     public synchronized void start() {
+
+        running = true;
         thread = new Thread(this);
         thread.start();
-        running = true;
     }
 
     public synchronized void stop() {
@@ -38,11 +38,11 @@ public class Game extends Canvas implements Runnable {
             thread.join();
             running = false;
         } catch (Exception e) {
-            e.printStackTrace();
+
         }
     }
 
-    public void run() {
+    public final void run() {
 
         long lastTime = System.nanoTime();
         double amountOfTicks = 60.0;
@@ -83,13 +83,16 @@ public class Game extends Canvas implements Runnable {
             this.createBufferStrategy(3);
         }
 
-        Graphics g = bs.getDrawGraphics();
+        if (bs != null) {
+            Graphics g = bs.getDrawGraphics();
 
-        g.setColor(Color.green);
-        g.fillRect(0, 0, width, height);
+            g.setColor(Color.green);
+            g.fillRect(0, 0, width, height);
+
+            g.dispose();
+            bs.show();
+        }
         
-        g.dispose();
-        bs.show();
     }
 
 }
