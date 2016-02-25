@@ -1,6 +1,6 @@
-# EbinHackerointipeli
-T‰ss‰ peliss‰ hakkeroidaan tie voittoon!
-Teht‰v‰n‰ on n‰pp‰ill‰ n‰pp‰imistˆ‰si mahdollisimman raivokkaasti edet‰ksesi peliss‰.
+# CatchEm
+T√§ss√§ peliss√§ hakkeroidaan tie voittoon!
+Teht√§v√§n√§ on n√§pp√§ill√§ n√§pp√§imist√∂√§si mahdollisimman raivokkaasti edet√§ksesi peliss√§.
 
 ##Dokumentaatio
 [aiheen kuvaus](dokumentointi/aihe.md)
