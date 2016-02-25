@@ -1,5 +1,5 @@
 #Aihe
-##Hackerointipeli
+##CatchEm
 Toteutetaan peli, jonka tarkoituksena on simuloida ironisella tavalla "hackerointia". Eli esimerkiksi tietokantoihin murtautumista.
 Peli ei tule mill‰‰n tavalla replikoimaan tai opettamaan aitoa murtautumista j‰rjestelmiin, vaan esitt‰m‰‰n kyseisest‰ humoristisen version.
 
