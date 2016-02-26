@@ -22,19 +22,26 @@ public class Game extends Canvas implements Runnable {
     public static final int width = 640, height = width / 12 * 9;
     private Thread thread;
     private boolean running = false;
-    private Handler handler;
+    private final Handler handler;
+    private final HUD hud;
 
     private Random random;
 
     public Game() {
         handler = new Handler();
 
-        Window window = new Window(width, height, "Hackerointipeli", this);
+        hud = new HUD(handler);
+
+        this.addKeyListener(new KeyInput(handler, hud, this));
+
+        Window window = new Window(width, height, "CatchEm", this);
 
         random = new Random();
 
-//        handler.addObject(new Player(100, 100, ID.Player));
-//        handler.addObject(new Player(0, 0, ID.Player));
+        handler.addObject(new Player(width / 2 - 32 + 64, height / 2 - 32, ID.Player, handler, hud));
+        handler.addObject(new Target(random.nextInt(width - 39), random.nextInt(height - 60), ID.Target));
+
+//        handler.addObject(new Player(width/2-32 - 64, height/2-32, ID.Player2));
     }
 
     public synchronized void start() {
@@ -54,6 +61,7 @@ public class Game extends Canvas implements Runnable {
     }
 
     public final void run() {
+        this.requestFocus();
 
         long lastTime = System.nanoTime();
         double amountOfTicks = 60.0;
@@ -71,13 +79,13 @@ public class Game extends Canvas implements Runnable {
                 delta--;
             }
             if (running) {
-                render();
+                this.render();
             }
             frames++;
 
             if (System.currentTimeMillis() - timer > 1000) {
                 timer += 1000;
-                System.out.println("FPS: " + frames);
+//                System.out.println("FPS: " + frames);
                 frames = 0;
             }
         }
@@ -86,6 +94,7 @@ public class Game extends Canvas implements Runnable {
 
     private void tick() {
         handler.tick();
+        hud.tick();
     }
 
     private void render() {
@@ -102,10 +111,22 @@ public class Game extends Canvas implements Runnable {
 
             handler.render(g);
 
+            hud.render(g);
+
             g.dispose();
+
             bs.show();
         }
+    }
 
+    public static int clamp(int variable, int min, int max) {
+        if (variable >= max) {
+            return variable = max;
+        } else if (variable <= min) {
+            return variable = min;
+        } else {
+            return variable;
+        }
     }
 
 }

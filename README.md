@@ -1,6 +1,6 @@
-# CatchEm
-Tässä pelissä hakkeroidaan tie voittoon!
-Tehtävänä on näppäillä näppäimistöäsi mahdollisimman raivokkaasti edetäksesi pelissä.
+﻿# CatchEm
+Tässä pelissä kerätään neliöitä kohti mahdollisimman suurta pistemäärää.
+Aika on pahin vastustajasi.
 
 ##Dokumentaatio
 [aiheen kuvaus](dokumentointi/aihe.md)

@@ -12,5 +12,6 @@ package CatchEm;
 public enum ID {
     
     Target(),
+    Player2(),
     Player();
 }

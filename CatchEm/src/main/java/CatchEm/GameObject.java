@@ -6,6 +6,7 @@
 package CatchEm;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
 
 /**
  *
@@ -17,6 +18,8 @@ public abstract class GameObject {
     protected ID id;
     protected int velX;
     protected int velY;
+    protected int score;
+    protected int stamina;
     
     public GameObject(int x, int y, ID id){
         this.x = x;
@@ -26,6 +29,7 @@ public abstract class GameObject {
     
     public abstract void tick();
     public abstract void render(Graphics g);
+    public abstract Rectangle getBounds();
     
     public void setX(int x){
         this.x = x;
@@ -65,5 +69,25 @@ public abstract class GameObject {
     
     public int getVelY(){
         return velY;
+    }
+    
+    public int getScore(){
+        return score;
+    }
+    
+    public void addScore(){
+        this.score ++;
+    }
+    
+    public void resetScore(){
+        this.score = 0;
+    }
+    
+    public int getStamina(){
+        return this.stamina;
+    }
+    
+    public void resetStamina(){
+        this.stamina = 100;
     }
 }

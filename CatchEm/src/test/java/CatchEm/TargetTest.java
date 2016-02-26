@@ -56,28 +56,9 @@ public class TargetTest {
         assertEquals(t.getId(), t.getId());
     }
     
-    @Test
-    public void healthIsZero(){
-        for (int i = 0; i <= 100; i++) {
-            t.removeHealth();
-        }
-        assertEquals(true, t.removeHealth());
-    }
     
-    @Test
-    public void getHitpointsWorks() {
-        assertEquals(100, t.getHitpoints());
-    }
     
-    @Test
-    public void getNameWorks(){
-        assertEquals("target", t.getName());
-    }
     
-    @Test
-    public void toStringWorks(){
-        assertEquals("Target: target, remaining hitpoints: 100" , t.toString());
-    }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //

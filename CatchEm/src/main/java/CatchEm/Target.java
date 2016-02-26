@@ -5,7 +5,10 @@
  */
 package CatchEm;
 
+import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.util.Random;
 
 /**
  *
@@ -13,43 +16,22 @@ import java.awt.Graphics;
  */
 public class Target extends GameObject{
 
-    private int hitpoints; //HP = hitpoints
-    private String name;
-    
     public Target(int x, int y, ID id){
         super(x, y, id);
-        this.name = "target";
-        this.hitpoints = 100;
     }
-
-    public int getHitpoints() {
-        return hitpoints;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public boolean removeHealth() {
-        hitpoints--;
-        if (hitpoints < 0) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public String toString() {
-        return "Target: " + name + ", remaining hitpoints: " + hitpoints;
-    }
-
+    
     @Override
     public void tick() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public Rectangle getBounds() {
+        return new Rectangle(x, y, 16, 16);
     }
 
     @Override
     public void render(Graphics g) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        g.setColor(Color.red);
+        g.fillRect(x, y, 16, 16);
     }
 }

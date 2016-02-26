@@ -13,30 +13,56 @@ import java.util.LinkedList;
  * @author Johannes
  */
 public class Handler {
-    
-    LinkedList<GameObject> object = new LinkedList<GameObject>();
-    
-    public void tick(){
+
+    public LinkedList<GameObject> object;
+
+    public Handler() {
+        this.object = new LinkedList<>();
+    }
+
+    public void tick() {
         for (int i = 0; i < object.size(); i++) {
             GameObject tempObject = object.get(i);
-            
+
             tempObject.tick();
         }
     }
-    
-    public void render(Graphics g){
+
+    public void render(Graphics g) {
         for (int i = 0; i < object.size(); i++) {
             GameObject tempObject = object.get(i);
-            
+
             tempObject.render(g);
         }
     }
-    
-    public void addObject(GameObject object){
+
+    public void addObject(GameObject object) {
         this.object.add(object);
     }
-    
-    public void removeObject(GameObject object){
+
+    public void removeObject(GameObject object) {
         this.object.remove(object);
+    }
+
+    public int player1Score() {
+        for (int i = 0; i < object.size(); i++) {
+            GameObject tempObject = object.get(i);
+
+            if (tempObject.getId() == ID.Player) {
+                return tempObject.getScore();
+            }
+        }
+        return 0;
+    }
+
+    public int player2Score() {
+        for (int i = 0; i < object.size(); i++) {
+            GameObject tempObject = object.get(i);
+            
+            if ((tempObject.getId() == ID.Player2)){
+                return tempObject.getScore();
+            }
+        }
+        return 0;
     }
 }
