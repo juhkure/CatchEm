@@ -26,8 +26,10 @@ public class HUD {
     private DecimalFormat df;
     private Handler handler;
     private Random random;
+    private boolean running;
 
     public HUD(Handler handler) {
+        this.running = false;
         this.random = new Random();
         this.handler = handler;
         this.ticksInSecond = 600;
@@ -36,16 +38,19 @@ public class HUD {
     }
 
     public void tick() {
-        time -= timeInOneTick;
 
-        if (time <= 0.0) {
-            time = 0.0;
+        if (running) {
+            time -= timeInOneTick;
 
-            for (int i = 0; i < handler.object.size(); i++) {
-                GameObject tempObject = handler.object.get(i);
+            if (time <= 0.0) {
+                time = 0.0;
 
-                if (tempObject.getId() == ID.Target) {
-                    handler.removeObject(tempObject);
+                for (int i = 0; i < handler.object.size(); i++) {
+                    GameObject tempObject = handler.object.get(i);
+
+                    if (tempObject.getId() == ID.Target) {
+                        handler.removeObject(tempObject);
+                    }
                 }
             }
         }
@@ -56,8 +61,11 @@ public class HUD {
         String timeInString = String.format("%.1f", time);
         g.setColor(Color.white);
         g.drawString(timeInString, 15, 15);
-        
-        
+
+        if (!running) {
+            g.setColor(Color.green);
+            g.drawString("Press enter to start", 255, 165);
+        }
 
         if (time <= 0.0) {
             g.setColor(Color.red);
@@ -83,17 +91,21 @@ public class HUD {
         time += 0.75;
     }
 
-    public void restart() {
+    public void start() {
+        running = true;
         for (int i = 0; i < handler.object.size(); i++) {
             GameObject tempObject = handler.object.get(i);
-            
+
             if (tempObject.getId() == ID.Target) {
                 handler.removeObject(tempObject);
             }
         }
         time = 10.0;
         handler.addObject(new Target(random.nextInt(width - 39), random.nextInt(height - 60), ID.Target));
-        
-        
+
+    }
+    
+    public boolean isRunning(){
+        return running;
     }
 }

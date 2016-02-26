@@ -24,6 +24,7 @@ public class Game extends Canvas implements Runnable {
     private boolean running = false;
     private final Handler handler;
     private final HUD hud;
+    private Spawner ts;
 
     private Random random;
 
@@ -31,6 +32,8 @@ public class Game extends Canvas implements Runnable {
         handler = new Handler();
 
         hud = new HUD(handler);
+        ts = new Spawner(handler, hud);
+        
 
         this.addKeyListener(new KeyInput(handler, hud, this));
 
@@ -38,8 +41,8 @@ public class Game extends Canvas implements Runnable {
 
         random = new Random();
 
-        handler.addObject(new Player(width / 2 - 32 + 64, height / 2 - 32, ID.Player, handler, hud));
-        handler.addObject(new Target(random.nextInt(width - 39), random.nextInt(height - 60), ID.Target));
+//        handler.addObject(new Player(width / 2 - 32 + 64, height / 2 - 32, ID.Player, handler, hud));
+//        handler.addObject(new Target(random.nextInt(width - 39), random.nextInt(height - 60), ID.Target));
 
 //        handler.addObject(new Player(width/2-32 - 64, height/2-32, ID.Player2));
     }
@@ -95,6 +98,7 @@ public class Game extends Canvas implements Runnable {
     private void tick() {
         handler.tick();
         hud.tick();
+        ts.tick();
     }
 
     private void render() {

@@ -8,3 +8,4 @@ CatchEm\Game.class
 CatchEm\ID.class
 CatchEm\Player.class
 CatchEm\Target.class
+CatchEm\Spawner.class

@@ -59,7 +59,7 @@ public class KeyInput extends KeyAdapter {
         }
         
         if(key == KeyEvent.VK_ENTER){
-            hud.restart();
+            hud.start();
             
             for (int i = 0; i < handler.object.size(); i++) {
                 GameObject tempObject = handler.object.get(i);
