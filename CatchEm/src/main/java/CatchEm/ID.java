@@ -5,13 +5,17 @@
  */
 package CatchEm;
 
-/**
+/** 
+ * ID luokka mahdollistaa gameobjektion tunnistamisen. Luokka antaa jokaiselle
+ * listatulle objektille oman ID:n jota voi käyttää tunnistautumisessa myöhemmin.
  *
  * @author Johannes
  */
 public enum ID {
 
     Target(),
+
     Player2(),
+
     Player();
 }

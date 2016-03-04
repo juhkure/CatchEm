@@ -24,6 +24,16 @@ public class Player extends GameObject {
     private HUD hud;
     private Spawner spawner;
 
+    /**
+     * Alustetaan pelaaja
+     *
+     * @param x x -koodrinaatti
+     * @param y y -koordinaatti
+     * @param id ID tunnistautumista varten
+     * @param handler
+     * @param hud
+     * @param spawner
+     */
     public Player(int x, int y, ID id, Handler handler, HUD hud, Spawner spawner) {
         super(x, y, id);
         random = new Random();
@@ -44,6 +54,11 @@ public class Player extends GameObject {
 
         collision();
     }
+    
+    /**
+     * Joka peli tickin aikana collision metodi tarkistaa mikäli pelaajan ja 
+     * targetin välillä on "fyysinen" yhteys.
+     */
 
     private void collision() {
         for (int i = 0; i < handler.object.size(); i++) {
@@ -61,6 +76,10 @@ public class Player extends GameObject {
         }
     }
 
+    /**
+     *
+     * @param g
+     */
     @Override
     public void render(Graphics g) {
         if (getId() == ID.Player) {
@@ -74,6 +93,10 @@ public class Player extends GameObject {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public Rectangle getBounds() {
         return new Rectangle(x, y, 32, 32);

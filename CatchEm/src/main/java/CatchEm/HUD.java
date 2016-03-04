@@ -28,6 +28,10 @@ public class HUD {
     private Random random;
     private boolean running;
 
+    /**
+     *
+     * @param handler Handler luokka, jota käytetään myöhemmin
+     */
     public HUD(Handler handler) {
         this.running = false;
         this.random = new Random();
@@ -37,6 +41,11 @@ public class HUD {
         timeInOneTick = (double) time / ticksInSecond;
     }
 
+    /**
+     * HUD luokan tick metodi. Päivittää pelin ajan ja tarkistaa ettei Target -olioita löydy pelistä kun aika
+     * on loppu.
+     *
+     */
     public void tick() {
 
         if (running) {
@@ -56,6 +65,11 @@ public class HUD {
         }
     }
 
+    /**
+     * Renderoidaan elementit ikkunalle
+     *
+     * @param g Käytettävät grafiikat
+     */
     public void render(Graphics g) {
 
         String timeInString = String.format("%.1f", time);
@@ -87,10 +101,18 @@ public class HUD {
         }
     }
 
+    /** 
+     * Lisätään aikaa 0.75 sekuntia.
+     *
+     */
     public void addTime() {
         time += 0.75;
     }
 
+    /**
+     * Käynnistää pelin graafiset elementit.
+     *
+     */
     public void start() {
         running = true;
         for (int i = 0; i < handler.object.size(); i++) {
@@ -105,6 +127,11 @@ public class HUD {
 
     }
 
+    /**
+     * Kertoo mikäli peli on jo käynnissä.
+     *
+     * @return running Onko peli käynnissä
+     */
     public boolean isRunning() {
         return running;
     }

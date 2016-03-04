@@ -2,8 +2,8 @@
 <checkstyle version="6.11.2">
 <file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\Game.java">
 <error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
-<error line="22" column="29" severity="error" message="Name &apos;Width&apos; must match pattern &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
-<error line="23" column="29" severity="error" message="Name &apos;Height&apos; must match pattern &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
+<error line="25" column="29" severity="error" message="Name &apos;Width&apos; must match pattern &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
+<error line="30" column="29" severity="error" message="Name &apos;Height&apos; must match pattern &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
 </file>
 <file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\GameObject.java">
 <error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>

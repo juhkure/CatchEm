@@ -20,6 +20,11 @@ public class Spawner {
     private boolean playerExists;
     private Random random;
 
+    /**
+     *
+     * @param handler
+     * @param hud
+     */
     public Spawner(Handler handler, HUD hud) {
         this.handler = handler;
         this.hud = hud;

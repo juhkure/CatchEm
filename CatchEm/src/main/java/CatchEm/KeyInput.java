@@ -21,6 +21,13 @@ public class KeyInput extends KeyAdapter {
     private int speedBoost;
     private int speed;
 
+    /**
+     * Tarkastelee käyttäjän syötteitä.
+     *
+     * @param handler handler gameobject listaa käytetään
+     * @param hud 
+     * @param game
+     */
     public KeyInput(Handler handler, HUD hud, Game game) {
         this.handler = handler;
         this.game = game;

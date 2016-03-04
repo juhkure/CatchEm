@@ -22,6 +22,12 @@ public abstract class GameObject {
     protected int score;
     protected int stamina;
 
+    /**
+     *
+     * @param x Peliobjektin x sijainti
+     * @param y Peliobjektin y sijainti
+     * @param id Peliobjektin tunnistus ID
+     */
     public GameObject(int x, int y, ID id) {
         this.x = x;
         this.y = y;
@@ -29,9 +35,7 @@ public abstract class GameObject {
     }
 
     public abstract void tick();
-
     public abstract void render(Graphics g);
-
     public abstract Rectangle getBounds();
 
     public void setX(int x) {
