@@ -18,16 +18,19 @@ import java.util.Random;
  */
 public class Player extends GameObject {
 
-    Random random = new Random();
-    Handler handler;
-    HUD hud;
+    private Random random;
+    private Handler handler;
+    private HUD hud;
+    private Spawner spawner;
 
-    public Player(int x, int y, ID id, Handler handler, HUD hud) {
+    public Player(int x, int y, ID id, Handler handler, HUD hud, Spawner spawner) {
         super(x, y, id);
+        random = new Random();
         this.score = 0;
         this.handler = handler;
         this.hud = hud;
         this.stamina = 100;
+        this.spawner = spawner;
     }
 
     @Override
@@ -51,7 +54,7 @@ public class Player extends GameObject {
                 if(getBounds().intersects(tempObject.getBounds())){
                     this.addScore();
                     handler.removeObject(tempObject);
-                    handler.addObject(new Target(random.nextInt(width-39), random.nextInt(height-60), ID.Target));
+                    
                     hud.addTime();
                 }
             }

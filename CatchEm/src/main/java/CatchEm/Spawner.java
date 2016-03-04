@@ -7,6 +7,7 @@ package CatchEm;
 
 import static CatchEm.Game.height;
 import static CatchEm.Game.width;
+import java.util.Random;
 
 /**
  *
@@ -17,11 +18,13 @@ public class Spawner {
     private Handler handler;
     private HUD hud;
     private boolean playerExists;
+    private Random random;
 
     public Spawner(Handler handler, HUD hud) {
         this.handler = handler;
         this.hud = hud;
         playerExists = false;
+        random = new Random();
     }
 
     public void tick() {
@@ -33,9 +36,14 @@ public class Spawner {
                 }
             }
             if (!playerExists) {
-                handler.addObject(new Player(width / 2 - 32 + 64, height / 2 - 32, ID.Player, handler, hud));
+                handler.addObject(new Player(width / 2 - 32 + 64, height / 2 - 32, ID.Player, handler, hud, this));
+                playerExists = true;
             }
         }
+    }
+
+    public void addTarget() {
+        handler.addObject(new Target(random.nextInt(width - 39), random.nextInt(height - 60), ID.Target));
     }
 
 }

@@ -30,6 +30,19 @@ public class KeyInput extends KeyAdapter {
         speed = 4;
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public void keyPressed(KeyEvent e){
         int key = e.getKeyCode();
         
