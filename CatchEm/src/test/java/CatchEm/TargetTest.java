@@ -56,6 +56,14 @@ public class TargetTest {
         assertEquals(t.getId(), t.getId());
     }
     
+    @Test
+    public void resettingScore(){
+        t.addScore();
+        t.resetScore();
+        
+        assertEquals(0, t.getScore());
+    }
+    
     
     
     

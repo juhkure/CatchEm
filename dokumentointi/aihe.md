@@ -1,20 +1,18 @@
 #Aihe
 ##CatchEm
-Toteutetaan peli, jonka tarkoituksena on simuloida ironisella tavalla "hackerointia". Eli esimerkiksi tietokantoihin murtautumista.
-Peli ei tule mill‰‰n tavalla replikoimaan tai opettamaan aitoa murtautumista j‰rjestelmiin, vaan esitt‰m‰‰n kyseisest‰ humoristisen version.
+CatchEm peliss‰ vastustajana on aika, ja tavoitteena pisteet. Kymmenen sekunnin aikana pelaajan t‰ytyy ker‰t‰ mahdollisimman paljon pisteit‰, jotka pident‰v‰t
+pelaajan aikaa.
 
-Peli saattaa sis‰lt‰‰ er‰‰nlaisen palkin, joka kertoo pelaajan etenemisen "hackeroinnissa". Pelaajalla on m‰‰r‰tty aika jonka aikana h‰n saa mahdollisesti yritt‰‰
-murtautua useampiin j‰rjestelmiin, mik‰li ehtii.
-
-Murtautuessaan johonkin j‰rjestelm‰‰n onnistuneesti, pelaajalle ilmoitetaan saavutuksestaan.
+Ajan loputtua pelaaja n‰kee pistem‰‰r‰ns‰ ja voi yritt‰‰ uudelleen.
 
 ##K‰ytt‰j‰t
-Kuka tahansa pelaaja
+Kuka tahansa pelaaja.
 
 ##Kaikkien k‰ytt‰jien toiminnot/pelaajan toiminnot
-Pelaaja voi avata pelin, ja aloittaa sen painamalla "Start" -n‰pp‰int‰
+Pelaaja aloittaa pelin painamalla "Enter" -n‰pp‰int‰.
 
-Viel‰ ei ole kaikkea p‰‰tetty, mutta n‰ill‰ n‰kymin pelaajan tulee painella n‰pp‰imistˆ‰‰n t‰ysin satunnaisessa j‰rjestyksess‰, voittaakseen ja edet‰kseen peliss‰.
-Peliss‰ ik‰‰nkuin "sp‰mmit‰‰n" n‰pp‰imi‰, voittoa kohti.
+Pelin aikana pelaaja voi milloin tahansa painaa "Enter" -n‰pp‰int‰ uudelleen aloittakseen v‰littˆm‰sti alusta.
 
-Pelin loputtua, pelaaja voi valita pelatakseen uudelleen tai lopettaakseen pelin, jolloin pelin ikkuna sulkeutuu.
+T‰m‰n j‰lkeen pelaajan t‰ytyy ker‰t‰ punaisia neliˆit‰ saadakseen pisteit‰.
+
+Ajan loputtua, pelaaja voi painaa "esc" -n‰pp‰int‰ sulkeakseen pelin. Vaihtoehtoisesti, pelaaja voi painaa taas "Enter" -n‰pp‰int‰ yritt‰‰kseen uudelleen.

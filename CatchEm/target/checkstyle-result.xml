@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\Game.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="22" column="29" severity="error" message="Name &apos;Width&apos; must match pattern &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
+<error line="23" column="29" severity="error" message="Name &apos;Height&apos; must match pattern &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\GameObject.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\Handler.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\HUD.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\ID.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\KeyInput.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\Main.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\Player.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\Spawner.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\Target.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+<file name="C:\Users\Johannes\Documents\GitHub\CatchEm\CatchEm\src\main\java\CatchEm\Window.java">
+<error line="6" column="9" severity="error" message="Name &apos;CatchEm&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+</file>
+</checkstyle>
