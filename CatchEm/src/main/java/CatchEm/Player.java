@@ -54,7 +54,7 @@ public class Player extends GameObject {
                 if(getBounds().intersects(tempObject.getBounds())){
                     this.addScore();
                     handler.removeObject(tempObject);
-                    
+                    spawner.addTarget();
                     hud.addTime();
                 }
             }
