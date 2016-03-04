@@ -5,8 +5,8 @@
  */
 package CatchEm;
 
-import static CatchEm.Game.height;
-import static CatchEm.Game.width;
+import static CatchEm.Game.Height;
+import static CatchEm.Game.Width;
 import java.awt.Color;
 import java.awt.Graphics;
 import static java.lang.Math.random;
@@ -101,11 +101,11 @@ public class HUD {
             }
         }
         time = 10.0;
-        handler.addObject(new Target(random.nextInt(width - 39), random.nextInt(height - 60), ID.Target));
+        handler.addObject(new Target(random.nextInt(Width - 39), random.nextInt(Height - 60), ID.Target));
 
     }
-    
-    public boolean isRunning(){
+
+    public boolean isRunning() {
         return running;
     }
 }

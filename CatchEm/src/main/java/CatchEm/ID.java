@@ -10,7 +10,7 @@ package CatchEm;
  * @author Johannes
  */
 public enum ID {
-    
+
     Target(),
     Player2(),
     Player();

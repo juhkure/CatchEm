@@ -17,3 +17,6 @@ K‰ytin tunnin pelin ohjelmoimiseen, mit‰‰n suurta ei tehty. Vain muutamia luokki
 
 ##19.2.2016
 17.00-24.00 Oli paljon ongelmia pelin windowin kanssa, sill‰ se v‰lill‰ toimi ja v‰lill‰ ei, riippumatta koskinko koodiin vai en. Sain sen pitk‰n trial and error -vaiheen j‰lkeen toimimaan.
+
+##25.2.2016
+20.00-03.00 Etenin paljon projektissa. Sain pelin l‰hes loppuun asti toimivaksi, viel‰ refactorointia ja testej‰ t‰ytyy tehd‰.

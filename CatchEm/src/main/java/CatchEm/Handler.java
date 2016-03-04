@@ -58,8 +58,8 @@ public class Handler {
     public int player2Score() {
         for (int i = 0; i < object.size(); i++) {
             GameObject tempObject = object.get(i);
-            
-            if ((tempObject.getId() == ID.Player2)){
+
+            if ((tempObject.getId() == ID.Player2)) {
                 return tempObject.getScore();
             }
         }

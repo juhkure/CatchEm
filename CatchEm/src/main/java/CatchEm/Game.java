@@ -19,7 +19,9 @@ public class Game extends Canvas implements Runnable {
 
     private static final long serialVersionUID = 4552703084559473965L;
 
-    public static final int width = 640, height = width / 12 * 9;
+    public static final int Width = 640;
+    public static final int Height = Width / 12 * 9;
+
     private Thread thread;
     private boolean running = false;
     private final Handler handler;
@@ -33,17 +35,15 @@ public class Game extends Canvas implements Runnable {
 
         hud = new HUD(handler);
         ts = new Spawner(handler, hud);
-        
 
         this.addKeyListener(new KeyInput(handler, hud, this));
 
-        Window window = new Window(width, height, "CatchEm", this);
+        Window window = new Window(Width, Height, "CatchEm", this);
 
         random = new Random();
 
 //        handler.addObject(new Player(width / 2 - 32 + 64, height / 2 - 32, ID.Player, handler, hud));
 //        handler.addObject(new Target(random.nextInt(width - 39), random.nextInt(height - 60), ID.Target));
-
 //        handler.addObject(new Player(width/2-32 - 64, height/2-32, ID.Player2));
     }
 
@@ -111,7 +111,7 @@ public class Game extends Canvas implements Runnable {
             Graphics g = bs.getDrawGraphics();
 
             g.setColor(Color.black);
-            g.fillRect(0, 0, width, height);
+            g.fillRect(0, 0, Width, Height);
 
             handler.render(g);
 

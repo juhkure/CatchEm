@@ -13,6 +13,7 @@ import java.awt.Rectangle;
  * @author Johannes
  */
 public abstract class GameObject {
+
     protected int x;
     protected int y;
     protected ID id;
@@ -20,74 +21,76 @@ public abstract class GameObject {
     protected int velY;
     protected int score;
     protected int stamina;
-    
-    public GameObject(int x, int y, ID id){
+
+    public GameObject(int x, int y, ID id) {
         this.x = x;
         this.y = y;
         this.id = id;
     }
-    
+
     public abstract void tick();
+
     public abstract void render(Graphics g);
+
     public abstract Rectangle getBounds();
-    
-    public void setX(int x){
+
+    public void setX(int x) {
         this.x = x;
     }
-    
-    public void setY(int y){
+
+    public void setY(int y) {
         this.y = y;
     }
-    
-    public int getX(){
+
+    public int getX() {
         return x;
     }
-    
-    public int getY(){
+
+    public int getY() {
         return y;
     }
-    
-    public void setId(ID id){
+
+    public void setId(ID id) {
         this.id = id;
     }
-    
-    public ID getId(){
+
+    public ID getId() {
         return id;
     }
-    
-    public void setVelX(int velX){
+
+    public void setVelX(int velX) {
         this.velX = velX;
     }
-    
-    public void setVelY(int velY){
+
+    public void setVelY(int velY) {
         this.velY = velY;
     }
-    
-    public int getVelx(){
+
+    public int getVelx() {
         return velX;
     }
-    
-    public int getVelY(){
+
+    public int getVelY() {
         return velY;
     }
-    
-    public int getScore(){
+
+    public int getScore() {
         return score;
     }
-    
-    public void addScore(){
-        this.score ++;
+
+    public void addScore() {
+        this.score++;
     }
-    
-    public void resetScore(){
+
+    public void resetScore() {
         this.score = 0;
     }
-    
-    public int getStamina(){
+
+    public int getStamina() {
         return this.stamina;
     }
-    
-    public void resetStamina(){
+
+    public void resetStamina() {
         this.stamina = 100;
     }
 }

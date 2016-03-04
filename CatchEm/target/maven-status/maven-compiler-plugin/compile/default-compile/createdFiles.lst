@@ -1,6 +1,6 @@
 CatchEm\Handler.class
-CatchEm\main.class
 CatchEm\Window.class
+CatchEm\Main.class
 CatchEm\HUD.class
 CatchEm\KeyInput.class
 CatchEm\GameObject.class

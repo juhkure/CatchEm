@@ -5,10 +5,11 @@
  */
 package CatchEm;
 
-import static CatchEm.Game.height;
-import static CatchEm.Game.width;
+import static CatchEm.Game.Height;
+import static CatchEm.Game.Width;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Paint;
 import java.awt.Rectangle;
 import java.util.Random;
 
@@ -37,21 +38,20 @@ public class Player extends GameObject {
     public void tick() {
         x += velX;
         y += velY;
-        
-        
-        x = Game.clamp(x, 0, Game.width - 39);
-        y = Game.clamp(y, 0, Game.height - 60);
-        
+
+        x = Game.clamp(x, 0, Game.Width - 39);
+        y = Game.clamp(y, 0, Game.Height - 60);
+
         collision();
     }
-    
-    private void collision(){
+
+    private void collision() {
         for (int i = 0; i < handler.object.size(); i++) {
 
             GameObject tempObject = handler.object.get(i);
-            
-            if(tempObject.getId() == ID.Target){
-                if(getBounds().intersects(tempObject.getBounds())){
+
+            if (tempObject.getId() == ID.Target) {
+                if (getBounds().intersects(tempObject.getBounds())) {
                     this.addScore();
                     handler.removeObject(tempObject);
                     spawner.addTarget();
@@ -65,14 +65,14 @@ public class Player extends GameObject {
     public void render(Graphics g) {
         if (getId() == ID.Player) {
             g.setColor(Color.blue);
+
             g.fillRect(x, y, 32, 32);
         }
-        if (getId() == ID.Player2){
+        if (getId() == ID.Player2) {
             g.setColor(Color.green);
             g.fillRect(x, y, 32, 32);
         }
     }
-    
 
     @Override
     public Rectangle getBounds() {

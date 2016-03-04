@@ -14,16 +14,16 @@ import java.util.Random;
  *
  * @author Johannes
  */
-public class Target extends GameObject{
+public class Target extends GameObject {
 
-    public Target(int x, int y, ID id){
+    public Target(int x, int y, ID id) {
         super(x, y, id);
     }
-    
+
     @Override
     public void tick() {
     }
-    
+
     @Override
     public Rectangle getBounds() {
         return new Rectangle(x, y, 16, 16);

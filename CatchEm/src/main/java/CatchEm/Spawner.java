@@ -5,8 +5,8 @@
  */
 package CatchEm;
 
-import static CatchEm.Game.height;
-import static CatchEm.Game.width;
+import static CatchEm.Game.Height;
+import static CatchEm.Game.Width;
 import java.util.Random;
 
 /**
@@ -36,14 +36,14 @@ public class Spawner {
                 }
             }
             if (!playerExists) {
-                handler.addObject(new Player(width / 2 - 32 + 64, height / 2 - 32, ID.Player, handler, hud, this));
+                handler.addObject(new Player(Width / 2 - 32 + 64, Height / 2 - 32, ID.Player, handler, hud, this));
                 playerExists = true;
             }
         }
     }
 
     public void addTarget() {
-        handler.addObject(new Target(random.nextInt(width - 39), random.nextInt(height - 60), ID.Target));
+        handler.addObject(new Target(random.nextInt(Width - 39), random.nextInt(Height - 60), ID.Target));
     }
 
 }
